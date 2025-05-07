@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Table Generator</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+    th, td {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Multiplication Table Generator</h2>
+
+
+  <label for="start">Enter starting number (between 2 and 10):</label>
+  <input type="number" id="start" min="2" max="10">
+  <br>
+  <label for="end">Enter ending number (between 2 and 10):</label>
+  <input type="number" id="end" min="2" max="10">
+  <br><br>
+  
+  <button onclick="generateTable()">Generate Table</button>
+
+
+  <div id="table-container"></div>
+
+
+  <script src="multiplication-table.js"></script>
+
+</body>
+</html>
